@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1= title
+  
+    hr
+
+    ul 
+        each evento in eventos
+            li 
+                strong #{ evento.evento }
+                legend #{ evento.fecha.dia }/#{ evento.fecha.mes }/#{ evento.fecha.ano }
